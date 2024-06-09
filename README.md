@@ -1,9 +1,44 @@
 # API-Docs
 ### Register
-* method
-<br>POST
-* URL
+* Method <br>
+POST
+* URL <br>
+  /register
+* Body Request
+```
+{
+    "username": "test",
+    "gender": "female",
+    "email": "test@email.com",
+    "password": "password"
+}
+```
+* Response
+```
+{
+    "status": "success",
+    "message": "User created successfully!"
+}
+```
 ### Login
+* Method <br>
+POST
+* URL <br>
+  /login
+* Body Request
+```
+{
+    "email": "test@email.com",
+    "password": "password"
+}
+```
+* Response
+```
+{
+    "status": "success",
+    "message": "Login successful!"
+}
+```
 ### Read User
 * Method <br>
 GET
@@ -13,11 +48,11 @@ GET
 ```
 {
     "status": "success",
-    "message": "get successful",
+    "message": "get user successful!",
     "data": {
-        "username": "asfia",
-        "gender": "male",
-        "email": "asfia@gmail.com"
+        "username": "test",
+        "gender": "female",
+        "email": "test@email.com"
     }
 }
 ```
@@ -29,16 +64,16 @@ PUT
 * Body Request
 ```
 {
-    "newUsername": "asfia",
+    "newUsername": "test",
     "newGender": "male",
-    "newPassword": "asfia",
-    "newEmail": "asfia@gmail.com"
+    "newPassword": "test",
+    "newEmail": "test@email.com"
 }
 ```
 * Response
 ```
 {
-    "success": true,
+    "status": "success",
     "message": "User updated successfully!"
 }
 ```
