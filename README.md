@@ -43,7 +43,7 @@ POST
 * Method <br>
 GET
 * URL <br>
-/getUser
+/getUser/{username}
 * Response
 ```
 {
@@ -60,7 +60,7 @@ GET
 * Method <br>
 PUT
 * URL <br>
-/updateUser
+/updateUser/{username}
 * Body Request
 ```
 {
