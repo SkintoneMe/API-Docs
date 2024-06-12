@@ -99,7 +99,7 @@ Value = Bearer (token from login)
 * Body Request
 ```
 {
-    "password": "user password"
+    "password": "password"
 }
 ```
 * Response
