@@ -17,7 +17,7 @@ POST
 ```
 {
     "status": "success",
-    "message": "User created successfully!"
+    "message": "User created successfully"
 }
 ```
 ### Login
@@ -36,23 +36,31 @@ POST
 ```
 {
     "status": "success",
-    "message": "Login successful!"
+    "message": "login successful",
+    "username": "test",
+    "data": {
+        "token": "<token>"
+    }
 }
 ```
 ### Read User
 * Method <br>
 GET
 * URL <br>
-/getUser/{username}
+/readUser
+* Headers <br>
+Key = Authorization <br>
+Value = Bearer (token from login)
 * Response
 ```
 {
     "status": "success",
-    "message": "get user successful!",
+    "message": "read successful",
     "data": {
+        "id": (user id),
         "username": "test",
         "gender": "female",
-        "email": "test@email.com"
+        "email": "test@gmail.com"
     }
 }
 ```
@@ -60,22 +68,45 @@ GET
 * Method <br>
 PUT
 * URL <br>
-/updateUser/{username}
+/updateUser
+* Headers <br>
+Key = Authorization <br>
+Value = Bearer (token from login)
 * Body Request
 ```
 {
-    "newUsername": "test",
-    "newGender": "male",
-    "newPassword": "test",
-    "newEmail": "test@email.com"
+  "username": "test",
+  "gender": "female",
+  "email": "test@gmail.com",
+  "password": "password"
 }
 ```
 * Response
 ```
 {
     "status": "success",
-    "message": "User updated successfully!"
+    "message": "update successful"
 }
 ```
 ### Delete User
+* Method <br>
+POST
+* URL <br>
+  /deleteUser
+* Headers <br>
+Key = Authorization <br>
+Value = Bearer (token from login)
+* Body Request
+```
+{
+    "password": "user password"
+}
+```
+* Response
+```
+{
+    "status": "success",
+    "message": "Delete successful"
+}
+```
 ### Get History
