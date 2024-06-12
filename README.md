@@ -38,6 +38,8 @@ POST
     "status": "success",
     "message": "login successful",
     "username": "test",
+    "email": "test@gmail.com",
+    "gender": "female",
     "data": {
         "token": "<token>"
     }
