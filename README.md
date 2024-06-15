@@ -128,30 +128,24 @@ Value = (select files)
     "status": "success",
     "message": "Model predicted successfully",
     "data": {
-        "id": "<idpredict>",
-        "predictedClassName": "mid-dark",
+        "id": "48a7995a-7591-4917-8005-e7f3936158fd",
+        "predictedClassName": "dark",
         "predictions": {
-            "0": 6.849454052826331e-7,
-            "1": 5.806282388221007e-8,
-            "2": 0.9927035570144653,
-            "3": 0.007295762654393911
+            "0": 0.8377628326416016,
+            "1": 0.000004212452950014267,
+            "2": 0.16201093792915344,
+            "3": 0.00022200567764230072
         },
-        "predictedClassIndex": 2,
-        "createdAt": "2024-06-13T16:45:38.267Z",
+        "predictedClassIndex": 0,
+        "createdAt": "2024-06-15T07:27:25.277Z",
         "recommendation": [
-            "#8c001a",
-            "#d7c0d0",
-            "#64113f",
-            "#2e294e"
+            "#03045e",
+            "#832161",
+            "#363062",
+            "#751628"
         ],
         "jewelryRecommendation": [
             "gold"
-        ],
-        "colorPaletteImg": [
-            "https://storage.googleapis.com/color_recommendation/mid-dark/8c001a.png",
-            "https://storage.googleapis.com/color_recommendation/mid-dark/d7c0d0.png",
-            "https://storage.googleapis.com/color_recommendation/mid-dark/64113f.png",
-            "https://storage.googleapis.com/color_recommendation/mid-dark/2e294e.png"
         ]
     }
 }
