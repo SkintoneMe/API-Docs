@@ -128,21 +128,33 @@ Value = (select files)
     "status": "success",
     "message": "Model predicted successfully",
     "data": {
-        "id": "48a7995a-7591-4917-8005-e7f3936158fd",
-        "predictedClassName": "dark",
+        "id": "505db21a-69be-48f8-a053-a0d16e71998f",
+        "predictedClassName": "mid-dark",
+        "colorCodeSkin": [
+            "#906d60"
+        ],
         "predictions": {
-            "0": 0.8377628326416016,
-            "1": 0.000004212452950014267,
-            "2": 0.16201093792915344,
-            "3": 0.00022200567764230072
+            "0": 6.849454052826331e-7,
+            "1": 5.806282388221007e-8,
+            "2": 0.9927035570144653,
+            "3": 0.007295762654393911
         },
-        "predictedClassIndex": 0,
-        "createdAt": "2024-06-15T07:27:25.277Z",
+        "predictedClassIndex": 2,
+        "createdAt": "2024-06-15T11:56:24.735Z",
         "recommendation": [
-            "#03045e",
-            "#832161",
-            "#363062",
-            "#751628"
+            "#8c001a",
+            "#d7c0d0",
+            "#64113f",
+            "#2e294e"
+        ],
+        "colorNamePalette": [
+            "Red cherry",
+            "Lavender",
+            "Purple",
+            "Dark Grey"
+        ],
+        "colorCodeJewelry": [
+            "#ffc536"
         ],
         "jewelryRecommendation": [
             "gold"
